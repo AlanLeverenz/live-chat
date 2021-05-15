@@ -1,7 +1,7 @@
 import { ref } from 'vue'
 import { projectAuth } from '../firebase/config'
 
-const user = ref(projectAuth.currentUser)
+const user = ref(projectAuth.currentUser) // when component loads get user
 
 projectAuth.onAuthStateChanged(_user => {
     console.log('User state change. Current user is:', _user)
