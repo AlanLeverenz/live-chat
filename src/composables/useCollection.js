@@ -1,5 +1,5 @@
 import { ref } from 'vue'  // to user ref values
-import { projectAuth, projectFirestore } from '../firebase/config'
+import { projectFirestore } from '../firebase/config'
 
 const useCollection = (collection) => {
     // to allow for unique errors for each collection
