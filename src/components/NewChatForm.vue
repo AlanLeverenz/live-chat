@@ -29,6 +29,7 @@ export default {
                 createAt: timestamp()
             }
 
+            // creates local snapshot where timeStamp is not yet created on the server. 
             await addDoc(chat)
             if (!error.value) {
                 message.value = ''
