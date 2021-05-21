@@ -32,9 +32,9 @@ export default {
         }
     })
 
-    // auto-scroll sets top of scroll to the height.
+    // messages stores ref values applied in the template
     const messages = ref(null)
-
+    // auto-scroll sets top of scroll to the height.
     onUpdated(() => {
         messages.value.scrollTop = messages.value.scrollHeight
     })
